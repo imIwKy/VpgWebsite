@@ -1,8 +1,10 @@
 body
 {
     background-image: url('background.png');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 *
@@ -62,10 +64,11 @@ body
     display: none;
 }
 
-.page-title
+.page-title, .panel-title
 {
     text-decoration-line: underline;
     margin-bottom: 5px;
+    font-weight: normal;
 }
 
 .card
@@ -85,4 +88,49 @@ p
     width: 100%;
     opacity: 90%;
     height: 40%;
+}
+
+.side-panel
+{
+    opacity: 90%;
+    width: 100%;
+}
+
+.panel-title
+{
+    text-align: center;
+}
+
+.card-body
+{
+    text-align: left;
+}
+
+a, a:hover, a:visited
+{
+    color: white;
+}
+
+a.faq
+{
+    text-decoration: none;
+}
+
+div.faq
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+div.faq a.page-title
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+div a.faq
+{
+    font-weight: normal;
 }
