@@ -1,0 +1,88 @@
+body
+{
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*
+{
+    color: white;
+    font-weight: bold;
+    --font: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiasing;
+    text-rendering: optimizeLegibility;
+}
+
+.title
+{
+    -webkit-text-stroke: 1.5px #212529;
+    font-size: 40px;
+    text-align: center;
+}
+
+.navbar
+{
+    opacity: 90%;
+    width: 100%;
+}
+
+.navbar-toggler, .navbar-toggler:focus
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 90%;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon
+{
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: block;
+    margin-left: -4px;
+}
+
+.nav-link, .nav-link:visited
+{
+    color: white;
+    text-align: center;
+}
+
+.nav-link:hover
+{
+    color: #6E85B7;
+}
+
+.dot
+{
+    display: none;
+}
+
+.page-title
+{
+    text-decoration-line: underline;
+    margin-bottom: 5px;
+}
+
+.card
+{
+    opacity: 90%;
+    width: 100%;
+    font-size: 20px;
+}
+
+p
+{
+    font-weight: normal;
+}
+
+.discord
+{
+    width: 100%;
+    opacity: 90%;
+    height: 40%;
+}
