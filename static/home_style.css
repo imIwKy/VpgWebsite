@@ -146,7 +146,13 @@ div a.faq
     margin-top: 0px;
 }
 
-@media only screen and (min-width: 768px) {
+.rounded-3, .discord
+{
+    border-radius: 0.7rem !important;
+}
+
+@media only screen and (min-width: 768px) 
+{
     .title
     {
         font-size: 60px;
@@ -161,5 +167,61 @@ div a.faq
     {
         margin-left: -18px;
         min-width: 107%;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .navbar
+    {
+        width: 75%;
+    } 
+
+    .discord
+    {
+        min-width: 71%;
+        max-width: 71%;
+    }
+
+    .side-panel
+    {
+        min-width: 73%;
+        max-width: 73%;
+    }
+
+    .title
+    {
+        font-size: 70px;
+    }
+
+    .nav-link
+    {
+        font-size: 25px;
+    }
+
+    .main-content
+    {
+        width: 50%;
+        margin-left: 117px;
+    }
+}
+
+@media only screen and (min-width: 1280px)
+{
+    .main-content
+    {
+        margin-left: 140px;
+    }
+
+    .discord
+    {
+        min-width: 70.5%;
+        max-width: 70.5%;
+    }
+
+    .side-panel
+    {
+        min-width: 72%;
+        max-width: 72%;
     }
 }
