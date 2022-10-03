@@ -134,3 +134,32 @@ div a.faq
 {
     font-weight: normal;
 }
+
+.discord, .side-panel
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.side-panel.side-panel-no-top
+{
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .title
+    {
+        font-size: 60px;
+    }
+
+    .nav-link
+    {
+        font-size: 20px;
+    }
+
+    .discord, .side-panel
+    {
+        margin-left: -18px;
+        min-width: 107%;
+    }
+}
