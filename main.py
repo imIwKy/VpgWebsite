@@ -26,3 +26,9 @@ def donate_page():
 @app.route('/wiki')
 def wiki_page():
         return render_template('wiki.html')
+
+def main():
+        app.run(debug=True);
+
+if __name__ == '__main__':
+        main()

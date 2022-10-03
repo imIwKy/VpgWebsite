@@ -1,0 +1,227 @@
+body
+{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+*
+{
+    color: white;
+    font-weight: bold;
+    --font: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiasing;
+    text-rendering: optimizeLegibility;
+}
+
+.title
+{
+    -webkit-text-stroke: 1.5px #212529;
+    font-size: 40px;
+    text-align: center;
+}
+
+.navbar
+{
+    opacity: 90%;
+    width: 100%;
+}
+
+.navbar-toggler, .navbar-toggler:focus
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 90%;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon
+{
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: block;
+    margin-left: -4px;
+}
+
+.nav-link, .nav-link:visited
+{
+    color: white;
+    text-align: center;
+}
+
+.nav-link:hover
+{
+    color: #6E85B7;
+}
+
+.dot
+{
+    display: none;
+}
+
+.page-title, .panel-title
+{
+    text-decoration-line: underline;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.card
+{
+    opacity: 90%;
+    width: 100%;
+    font-size: 20px;
+}
+
+p
+{
+    font-weight: normal;
+}
+
+.discord
+{
+    width: 100%;
+    opacity: 90%;
+    height: 40%;
+}
+
+.side-panel
+{
+    opacity: 90%;
+    width: 100%;
+}
+
+.panel-title
+{
+    text-align: center;
+}
+
+.card-body
+{
+    text-align: left;
+}
+
+a, a:hover, a:visited
+{
+    color: white;
+}
+
+a.faq
+{
+    text-decoration: none;
+}
+
+div.faq
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+div.faq a.page-title
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+div a.faq
+{
+    font-weight: normal;
+}
+
+.discord, .side-panel
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.side-panel.side-panel-no-top
+{
+    margin-top: 0px;
+}
+
+.rounded-3, .discord
+{
+    border-radius: 0.7rem !important;
+}
+
+@media only screen and (min-width: 768px) 
+{
+    .title
+    {
+        font-size: 60px;
+    }
+
+    .nav-link
+    {
+        font-size: 20px;
+    }
+
+    .discord, .side-panel
+    {
+        margin-left: -18px;
+        min-width: 107%;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .navbar
+    {
+        width: 75%;
+    } 
+
+    .discord
+    {
+        min-width: 71%;
+        max-width: 71%;
+    }
+
+    .side-panel
+    {
+        min-width: 73%;
+        max-width: 73%;
+    }
+
+    .title
+    {
+        font-size: 70px;
+    }
+
+    .nav-link
+    {
+        font-size: 25px;
+    }
+
+    .main-content
+    {
+        width: 50%;
+        margin-left: 117px;
+    }
+}
+
+@media only screen and (min-width: 1280px)
+{
+    .main-content
+    {
+        margin-left: 140px;
+    }
+
+    .discord
+    {
+        min-width: 70.5%;
+        max-width: 70.5%;
+    }
+
+    .side-panel
+    {
+        min-width: 72%;
+        max-width: 72%;
+    }
+}

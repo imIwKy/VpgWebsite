@@ -2,11 +2,293 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">  
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="static/home_style.css">
+
     <title>Vanilla Playground</title>
   </head>
   <body>
+
+    <!--Title-->
+    <div class="title">
+        Vanilla Playground
+    </div>
+
+    <!--Main Page-->
+    <div class="container">
+
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-sm bg-dark rounded-3 mx-auto">
+            <div class="container-fluid">
+              <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="collapseButton"">
+                <span class="navbar-toggler-icon rounded-3"></span>
+                <span class="navbar-toggler-icon rounded-3"></span>
+                <span class="navbar-toggler-icon rounded-3"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                  </li>
+                  <li class="mt-auto mb-auto dot">
+                    &#9679;
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/wiki">Wiki</a>
+                  </li>
+                  <li class="mt-auto mb-auto dot">
+                    &#9679;
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/vote">Vote</a>
+                  </li>
+                  <li class="mt-auto mb-auto dot">
+                    &#9679;
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/stats">Stats</a>
+                  </li>
+                  <li class="mt-auto mb-auto dot">
+                    &#9679;
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/archive">Archive</a>
+                  </li>
+                  <li class="mt-auto mb-auto dot">
+                    &#9679;
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/donate">Donate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!--Main Content-->
+        <div class="row">
+          <div class="col-md-7 main-content">
+            <div class="card bg-dark my-1 rounded-3">
+              <div class="card-body">
+
+                <!--Welcome paragraph-->
+                <p class="page-title">WELCOME</p>
+                <p>
+                  Welcome and thank you for visiting the official VPG website.
+                </p>
+                <p>
+                  Here you can find all the important information regarding the mincraft server.
+                </p>
+                <p>
+                  Enjoy your stay!
+                </p>
+
+                <!--About paragraph-->
+                <p class="page-title">ABOUT</p>
+                <p>
+                  VPG is a minecraft server with only goal to provide enjoyable environment with very little gameplay modification.
+                  Build, Team, Grief, Kill. The journey is up to you.
+                </p>
+
+                <!--Faq paragraph-->
+                <div class="faq">
+                  <a class="page-title" data-bs-toggle="collapse" href="#question" aria-expanded="false" aria-controls="question">FAQ</a>
+
+                  <!--Version-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#versionAnswer" aria-expanded="false" aria-controls="versionAnswer">- What version is server/world running on?</a>
+                    <p class="collapse" id="versionAnswer">
+                      > Server is always at the most recent version of game which is currently 1.19.2. 
+                      World was started at 1.17.1 and some chunks around 0/0 may belong to this version.
+                      You can join from any version from 1.18.2 up to 1.19.2.
+                    </p>
+                  </div>
+  
+                  <!--Is the server cracked-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#crackedAnswer" aria-expanded="false" aria-controls="crackedAnswer">- Is the server cracked?/I can't join/Can't verify</a>
+                    <p class="collapse" id="crackedAnswer">
+                      > The server is only for official MC accounts.
+                      If you can't join make sure that your device is connected to network, ip isn't wrong and you have official MC account.
+                      Also depends on what it says on disconnect screen.
+                    </p>
+                  </div>
+  
+                  <!--Are there alter plugins-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#pluginsAnswer" aria-expanded="false" aria-controls="pluginsAnswer">- Is there plugins/tpa/claims/dynmap etc?</a>
+                    <p class="collapse" id="pluginsAnswer">
+                      > Server is 100% vanilla and there are no plugins affecting gameplay.
+                    </p>
+                  </div>
+  
+                  <!--Can you use hacks-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#haxxAnswer" aria-expanded="false" aria-controls="haxxAnswer">- Is hacking allowed?</a>
+                    <p class="collapse" id="haxxAnswer">
+                      > Hacking isn't forbidden but discouraged.
+                      Temporary ban can be implemented in case of total abuse.
+                    </p>
+                  </div>
+  
+                  <!--Can you grief-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#griefAnswer" aria-expanded="false" aria-controls="griefAnswer">- Is griefing allowed?</a>
+                    <p class="collapse" id="griefAnswer">
+                      > You can do whatever you want as far as others not preventing you from doing it obviously.
+                    </p>
+                  </div>
+  
+                  <!--Keep Inventory-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#keepinvAnswer" aria-expanded="false" aria-controls="keepinvAnswer">- Is KeepInventory enabled?</a>
+                    <p class="collapse" id="keepinvAnswer">
+                      > No. And never will be.
+                      The Server is vanilla.
+                      KeepInventory is ruining many aspects of vanilla gameplay such as PvP and survival in general.
+                    </p>
+                  </div>
+  
+                  <!--Bad connection-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#connectionAnswer" aria-expanded="false" aria-controls="connectionAnswer">- I'm falling into the void, what do I do?</a>
+                    <p class="collapse" id="connectionAnswer">
+                      > That means that you have bad connection to server try reconnecting.
+                      You may have bad Wi-Fi or server might be overloaded.
+                    </p>
+                  </div>
+  
+                  <!--Seed-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#seedAnswer" aria-expanded="false" aria-controls="seedAnswer">- What is world seed?</a>
+                    <p class="collapse" id="seedAnswer">
+                      > Seed can be exploited in many ways and that's why it's not and won't be public. 
+                      Seed is useless to have since generation seeds are different on server.
+                    </p>
+                  </div>
+  
+                  <!--Whitelist-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#whitelistAnswer" aria-expanded="false" aria-controls="whitelistAnswer">- Is the server whitelisted?</a>
+                    <p class="collapse" id="whitelistAnswer">
+                      > Nope, it's open for everyone.
+                    </p>
+                  </div>
+  
+                  <!--Bedrock or java-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#editionAnswer" aria-expanded="false" aria-controls="editionAnswer">- Is the server bedrock or java?</a>
+                    <p class="collapse" id="editionAnswer">
+                      > It's java.
+                    </p>
+                  </div>
+  
+                  <!--Does server reset-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#resetAnswer" aria-expanded="false" aria-controls="resetAnswer">- Does server reset?</a>
+                    <p class="collapse" id="resetAnswer">
+                      > Nope. The server will never reset. Map is permanent. 
+                      Only unused chunks are being cleared once in a while.
+                    </p>
+                  </div>
+  
+                  <!--Nether roof-->
+                  <div class="faq collapse" id="question">
+                    <a class="faq" data-bs-toggle="collapse" href="#roofAnswer" aria-expanded="false" aria-controls="roofAnswer">- Is the nether roof opened?</a>
+                    <p class="collapse" id="roofAnswer">
+                      > No it's not. 
+                      It's disabled due to abuse and being imbalanced. 
+                      Farms and travelling are still possible without it. 
+                      Don't go there, it deals void damage.
+                    </p>
+                  </div>
+                </div>
+
+                <!--Contact Paragraph-->
+                <p class="page-title">CONTACT</p>
+                <p>
+                  If you have any questions, suggestions or issues, please send an email to: mcvpgs@gmail.com Important mails only.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Discord Widget-->
+          <div class="col-md">
+            <iframe class="discord" src="https://discord.com/widget?id=595644203275386901&theme=dark" allowtransparency="false" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+            <!--Donations panel-->
+            <div class="row">
+              <div class="col-5 side-panel side-panel-no-top">
+                <div class="card bg-dark rounded-3">
+                  <div class="card-body">
+                    <p class="panel-title">RECENT DONATIONS</p>
+                    <ol>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Top Donations panel-->
+            <div class="row">
+              <div class="col-md-5 side-panel">
+                <div class="card bg-dark rounded-3">
+                  <div class="card-body">
+                    <p class="panel-title">TOP DONORS</p>
+                    <ol>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                      <li>Person - Amount</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Donation Pool-->
+            <div class="row">
+              <div class="col-md-5 side-panel">
+                <div class="card bg-dark rounded-3">
+                  <div class="card-body">
+                    <p class="panel-title">DONATION GOAL</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped active progress-bar-animated" role="progressbar" style="width: 37.5%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="200">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Expenses Panel-->
+            <div class="row">
+              <div class="col-md-5 side-panel">
+                <div class="card bg-dark rounded-3">
+                  <div class="card-body">
+                    <p class="panel-title">RECENT EXPENSES</p>
+                    <ul>
+                      <li>Stuff - Amount</li>
+                      <li>Stuff - Amount</li>
+                      <li>Stuff - Amount</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
