@@ -1,18 +1,26 @@
 from flask import Flask, render_template
 import requests as re
+import time
 
 app = Flask(__name__)
-response = re.get('https://api.mcstatus.io/v2/status/java/play.mcvpg.org')
-server_status = response.json()
+
+def get_status():
+        response = re.get('https://api.mcstatus.io/v2/status/java/play.mcvpg.org')
+        return response.json()
+
 
 def main():
         app.run(debug=True)
+        while(True):
+                get_status()
+                time.sleep(60)
+
 
 
 @app.route('/')
 @app.route('/home')
 def home_page():
-        return render_template('home.html', status=server_status)
+        return render_template('home.html', status=get_status())
 
 @app.route('/vote')
 def vote_page():
