@@ -56,7 +56,7 @@ body
 
 .nav-link:hover
 {
-    color: #6E85B7;
+    color: #537dd8;
 }
 
 .dot
@@ -64,11 +64,11 @@ body
     display: none;
 }
 
-.page-title, .panel-title
+.panel-title, .page-title
 {
     text-decoration-line: underline;
     margin-bottom: 5px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .card
@@ -87,7 +87,7 @@ p
 {
     width: 100%;
     opacity: 90%;
-    height: 40%;
+    height: 25%;
 }
 
 .side-panel
