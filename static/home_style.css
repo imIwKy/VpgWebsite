@@ -151,6 +151,23 @@ div a.faq
     border-radius: 0.7rem !important;
 }
 
+.panel-title.ip
+{
+    text-decoration: none;
+}
+
+.status-online
+{
+    color: rgb(48, 235, 48);
+    text-align: center;
+}
+
+.status-offline
+{
+    color: rgb(243, 31, 31);
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) 
 {
     .title

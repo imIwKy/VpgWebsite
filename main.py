@@ -1,11 +1,18 @@
 from flask import Flask, render_template
+import requests as re
 
 app = Flask(__name__)
+response = re.get('https://api.mcstatus.io/v2/status/java/play.mcvpg.org')
+server_status = response.json()
+
+def main():
+        app.run(debug=True)
+
 
 @app.route('/')
 @app.route('/home')
 def home_page():
-        return render_template('home.html')
+        return render_template('home.html', status=server_status)
 
 @app.route('/vote')
 def vote_page():
@@ -29,4 +36,4 @@ def wiki_page():
         
 
 if __name__ == '__main__':
-        app.run(debug=False);
+        main()

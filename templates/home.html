@@ -216,8 +216,26 @@
             </div>
           </div>
 
-          <!--Discord Widget-->
+          <!--Sdie Panels-->
           <div class="col-md">
+
+            <!--Status Panel-->
+            <div class="row">
+              <div class="col-5 side-panel">
+                <div class="card bg-dark rounded-3">
+                  <div class="card-body">
+                    <p class="panel-title ip">IP: play.mcvpg.org</p>
+                    {% if status['online'] %}
+                    <p class="status-online">&#9679; Online {{ status['players']['online'] }}/60</p>
+                    {% else %}
+                    <p class="status-offline">&#9679; Offline 0/60</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Discord Widget-->
             <iframe class="discord" src="https://discord.com/widget?id=595644203275386901&theme=dark" allowtransparency="false" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
             <!--Donations panel-->
@@ -227,11 +245,11 @@
                   <div class="card-body">
                     <p class="panel-title">RECENT DONATIONS</p>
                     <ol>
-                      <li>Person - Amount</li>
-                      <li>Person - Amount</li>
-                      <li>Person - Amount</li>
-                      <li>Person - Amount</li>
-                      <li>Person - Amount</li>
+                      <li>Jakeob - 5$</li>
+                      <li>NotMark - 40$</li>
+                      <li>owmyleg - 20$</li>
+                      <li>IwKy - 5$</li>
+                      <li>cbdsex - 5$</li>
                     </ol>
                   </div>
                 </div>
