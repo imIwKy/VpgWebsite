@@ -16,13 +16,6 @@ body
     text-rendering: optimizeLegibility;
 }
 
-.title
-{
-    -webkit-text-stroke: 1.5px #212529;
-    font-size: 40px;
-    text-align: center;
-}
-
 .navbar
 {
     opacity: 90%;
@@ -56,7 +49,7 @@ body
 
 .nav-link:hover
 {
-    color: #537dd8;
+    color: #65f3c4;
 }
 
 .dot
@@ -137,7 +130,7 @@ div a.faq
 
 .discord, .side-panel
 {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 0px;
 }
 
@@ -168,13 +161,50 @@ div a.faq
     text-align: center;
 }
 
+.logo
+{
+    width: 80%;
+    height: 80%;
+    margin-bottom: -20px;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.card, .discord, .navbar
+{
+    border: 0.15rem solid #0f1113;
+    box-shadow: 0 0 .2rem #212529,
+    0 0 .2rem #212529,
+    0 0 .2rem #212529,
+    0 0 .2rem #212529;
+}
+
+.main-content
+{
+    margin-top: 8px;
+}
+
+.copy-button, .copy-button img
+{
+    height: 25px;
+    width: 25px;
+    border: none;
+    box-sizing: unset;
+    margin-right: -5px;
+}
+
+.motd
+{
+    margin-top: -10px;
+    text-align: center;
+}
+
+
 @media only screen and (min-width: 768px) 
 {
-    .title
-    {
-        font-size: 60px;
-    }
-
     .nav-link
     {
         font-size: 20px;
@@ -182,8 +212,18 @@ div a.faq
 
     .discord, .side-panel
     {
-        margin-left: -18px;
-        min-width: 107%;
+        margin-left: -15px;
+        min-width: 105%;
+    }
+
+    .logo
+    {
+        margin-bottom: -50px;
+    }
+
+    .dot
+    {
+        display: inline;
     }
 }
 
@@ -196,19 +236,14 @@ div a.faq
 
     .discord
     {
-        min-width: 71%;
-        max-width: 71%;
+        min-width: 70%;
+        max-width: 70%;
     }
 
     .side-panel
     {
-        min-width: 73%;
-        max-width: 73%;
-    }
-
-    .title
-    {
-        font-size: 70px;
+        min-width: 72%;
+        max-width: 72%;
     }
 
     .nav-link
@@ -221,6 +256,13 @@ div a.faq
         width: 50%;
         margin-left: 117px;
     }
+
+    .logo
+    {
+        margin-bottom: -65px;
+        width: 70%;
+        height: 70%;
+    }
 }
 
 @media only screen and (min-width: 1280px)
@@ -232,13 +274,20 @@ div a.faq
 
     .discord
     {
-        min-width: 70.5%;
-        max-width: 70.5%;
+        min-width: 69.5%;
+        max-width: 69.5%;
     }
 
     .side-panel
     {
-        min-width: 72%;
-        max-width: 72%;
+        min-width: 71%;
+        max-width: 71%;
+    }
+
+    .logo
+    {
+        margin-bottom: -75px;
+        width: 65%;
+        height: 65%;
     }
 }
