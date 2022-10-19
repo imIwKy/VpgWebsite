@@ -49,7 +49,7 @@ body
 
 .nav-link:hover
 {
-    color: #65f3c4;
+    color: #000000;
 }
 
 .dot
@@ -200,6 +200,13 @@ div a.faq
 {
     margin-top: -10px;
     text-align: center;
+}
+
+.donation-goal
+{
+    text-align: center;
+    text-decoration-line: none;
+    font-weight: bold;
 }
 
 
