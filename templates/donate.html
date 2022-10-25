@@ -4,9 +4,144 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Vanilla Playground</title>
+    <link type="text/css" rel="stylesheet" href="static/donate_style.css">
+    <title>Donate to VPG</title>
   </head>
   <body>
+    <!--Main Page-->
+    <div class="container">
+
+      <!--Navigation Bar-->
+      <nav class="navbar navbar-expand-sm bg-dark rounded-3 mx-auto">
+          <div class="container-fluid">
+            <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="collapseButton"">
+              <span class="navbar-toggler-icon rounded-3"></span>
+              <span class="navbar-toggler-icon rounded-3"></span>
+              <span class="navbar-toggler-icon rounded-3"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                </li>
+                <li class="mt-auto mb-auto dot">
+                  &#9679;
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/stats">Stats</a>
+                </li>
+                <li class="mt-auto mb-auto dot">
+                  &#9679;
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/archive">Archive</a>
+                </li>
+                <li class="mt-auto mb-auto dot">
+                  &#9679;
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/vote">Vote</a>
+                </li>
+                <li class="mt-auto mb-auto dot">
+                  &#9679;
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/donate">Donate</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!--Main Content-->
+        <div class="row">
+          <div class="col-md">
+            <div class="card bg-dark rounded-3 main-content mx-auto">
+              <div class="card-body">
+
+                <!--Title article-->
+                <p class="page-title">Support the server.</p>
+                <p>
+                  > Hello there! Are you having fun on the server? 
+                  <br>
+                  > I hope so, 
+                  because I'm trying to make it as enjoyable as possible.
+                </p>
+                <p>
+                  > Thing is that I cant really afford much for server, in fact 
+                  <br>
+                  my country is cut off in terms of finances, 
+                  <br>
+                  so only thing server relies on is your donations. 
+                  <br>
+                  > I can do nothing with it but ask you if you are willing to help me improve it.
+                </p>
+
+                <!--Info Article-->
+                <p class="page-title">Info</p>
+                <p>
+                  > All donations and expenses are gonna appear
+                  <br>
+                  on the home page and in a discord thread.
+                </p>
+
+                <!--Reward Article-->
+                <p class="page-title">What do I get for donation?</p>
+                <p>
+                  <p>
+                    Discord:
+                    <br>
+                    > <b class="no-underline">@Donor</b> role will be given to ones who donated at least 5$.
+                    <br>
+                    > <b class="no-underline">@Monthly supporter</b> role will be given to ones
+                    <br>
+                    who donated at least 5$ for at least 2 months in a row
+                    <br>
+                    and will last as far as one keeps the donations chain.
+                  </p>
+                  <p>
+                    Minecraft server:
+                    <br>
+                    > Your name will be first in the tablist.
+                    <br>
+                    > Your name in tablist and chat are going to be <b>bold</b>.
+                    <br>
+                    > You'll get access to some of chat colors and formatting.
+                  </p>
+                </p>
+
+                <!--Where donations go-->
+                <p class="page-title">Where will my donation go?</p>
+                <p>
+                  All the money will go to improve the server via:
+                  <br>
+                  > Uprading specs
+                  <br>
+                  > Ordering custom plugins
+                  <br>
+                  > Advertising
+                </p>
+
+                <!--Donation button-->
+                <div class="donate-button">
+                  <a href="https://paypal.me/VanillaPlayground">
+                    <img src="static/donate.webp" alt="Donate with PayPal">
+                  </a>
+                </div>
+
+                <!--Thank you message-->
+                <p>
+                  <b>
+                    Thank you!
+                    <br>
+                    All the help is appreciated! :)
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
