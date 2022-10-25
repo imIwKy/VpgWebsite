@@ -1,0 +1,150 @@
+body
+{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 20px;
+
+}
+
+*
+{
+    color: white;
+    font-weight: bold;
+    --font: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.navbar
+{
+    margin-top: 8px;
+    opacity: 90%;
+    width: 100%;
+}
+
+.navbar-toggler, .navbar-toggler:focus
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 90%;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon
+{
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: block;
+    margin-left: -4px;
+}
+
+.nav-link, .nav-link:visited
+{
+    color: white;
+    text-align: center;
+}
+
+.nav-link:hover
+{
+    color: #97e7e8;
+}
+
+.dot
+{
+    display: none;
+}
+
+p
+{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+a, a:hover, a:visited
+{
+    color: white;
+}
+
+.rounded-3
+{
+    border-radius: 0.7rem !important;
+}
+
+.navbar, .card
+{
+    border: 0.15rem solid #97e7e8;
+    box-shadow: 0 0 .2rem #d2f9fa,
+    0 0 .2rem #d2f9fa,
+    0 0 .2rem #d2f9fa,
+    0 0 .2rem #d2f9fa;
+}
+
+.card
+{
+    opacity: 90%;
+    margin-top: 8px;
+}
+
+.donate-button
+{
+    text-align: center;
+}
+
+.donate-button img
+{
+    width: 145px;
+    height: 74px;
+}
+
+.page-title
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.no-underline
+{
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 768px) 
+{
+    .dot
+    {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .navbar
+    {
+        width: 60%;
+    }
+    
+    .main-content
+    {
+        width: 60%;
+    }
+
+    .nav-link
+    {
+        font-size: 25px;
+    }
+
+    .donate-button img
+    {
+        width: 299px;
+        height: 139px;
+    }
+}
+
+@media only screen and (min-width: 1280px)
+{
+
+}
