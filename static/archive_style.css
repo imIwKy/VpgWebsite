@@ -89,17 +89,6 @@ a, a:hover, a:visited
     margin-top: 8px;
 }
 
-.donate-button
-{
-    text-align: center;
-}
-
-.donate-button img
-{
-    width: 145px;
-    height: 74px;
-}
-
 .page-title
 {
     font-weight: bold;
@@ -135,11 +124,5 @@ a, a:hover, a:visited
     .nav-link
     {
         font-size: 25px;
-    }
-
-    .donate-button img
-    {
-        width: 299px;
-        height: 139px;
     }
 }

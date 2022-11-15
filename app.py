@@ -26,7 +26,7 @@ def home_page():
         status = get_response()
         motd=get_motd(status)
         #You write the goal in first element current donations in second
-        donation_goal = [100, 37.5]
+        donation_goal = [100, 195]
         return render_template('home.html', status=status, motd=motd, donation_goal=donation_goal)
 
 #Route for vote page
@@ -37,7 +37,7 @@ def vote_page():
 #Route for stats page
 @app.route('/stats')
 def stats_page():
-        return render_template('stats.html')
+        return render_template('work_in_progress.html')
 
 #Route for archive page
 @app.route('/archive')

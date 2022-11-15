@@ -58,11 +58,6 @@ body
     display: none;
 }
 
-p
-{
-    font-weight: normal;
-    margin-bottom: 5px;
-}
 
 a, a:hover, a:visited
 {
@@ -87,30 +82,9 @@ a, a:hover, a:visited
 {
     opacity: 90%;
     margin-top: 8px;
-}
-
-.donate-button
-{
+    color: white;
     text-align: center;
 }
-
-.donate-button img
-{
-    width: 145px;
-    height: 74px;
-}
-
-.page-title
-{
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.no-underline
-{
-    text-decoration: none;
-}
-
 
 @media only screen and (min-width: 768px) 
 {

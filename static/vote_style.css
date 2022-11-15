@@ -69,6 +69,11 @@ a, a:hover, a:visited
     color: white;
 }
 
+a.vote-link
+{
+    font-weight: normal;
+}
+
 .rounded-3
 {
     border-radius: 0.7rem !important;
@@ -83,21 +88,18 @@ a, a:hover, a:visited
     0 0 .2rem #d2f9fa;
 }
 
+.panel-title
+{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+}
+
 .card
 {
     opacity: 90%;
     margin-top: 8px;
-}
-
-.donate-button
-{
-    text-align: center;
-}
-
-.donate-button img
-{
-    width: 145px;
-    height: 74px;
 }
 
 .page-title
@@ -111,12 +113,28 @@ a, a:hover, a:visited
     text-decoration: none;
 }
 
-
 @media only screen and (min-width: 768px) 
 {
     .dot
     {
         display: inline;
+    }
+
+    .navbar
+    {
+        width: 90%;
+    }
+
+    .main-content
+    {
+        margin-left: 35px;
+        margin-right: -15px;
+    }
+
+    .side-panel
+    {
+        width: 30%;
+        margin-right: 35px;
     }
 }
 
@@ -126,20 +144,44 @@ a, a:hover, a:visited
     {
         width: 60%;
     }
-    
+
     .main-content
     {
-        width: 60%;
+        margin-left: 185px;
+    }
+
+    .side-panel
+    {
+        width: 20%;
+        margin-right: 185px;
     }
 
     .nav-link
     {
         font-size: 25px;
     }
+}
 
-    .donate-button img
+@media only screen and (min-width: 1280px)
+{
+    .navbar
     {
-        width: 299px;
-        height: 139px;
+        width: 60%;
+    }
+
+    .main-content
+    {
+        margin-left: 220px;
+    }
+
+    .side-panel
+    {
+        width: 20%;
+        margin-right: 220px;
+    }
+
+    .nav-link
+    {
+        font-size: 25px;
     }
 }
